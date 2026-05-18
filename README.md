@@ -48,3 +48,10 @@ Notes
 
 - The repository already includes `vercel.json`, `netlify.toml`, and a GitHub Actions workflow under `.github/workflows/deploy.yml` so CI/CD works once pushed.
 - If you want me to run a live deploy from this environment, tell me which provider (Vercel / Netlify) and provide CLI login (or authorize) — or push to a GitHub repo and I can trigger the GitHub Actions.
+
+Deployment (Live)
+
+- Production (Vercel): https://charan-hz2dg3uwt-murakondacharans-projects.vercel.app
+- Alias: https://charan-gamma.vercel.app
+
+Automatic deploys are enabled: pushing to `main` triggers Vercel builds.
