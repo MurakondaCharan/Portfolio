@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, rgba(56, 189, 248, 0.08), transparent 22%),
+    radial-gradient(circle at 80% 22%, rgba(56, 189, 248, 0.06), transparent 18%),
+    linear-gradient(180deg, #040d1c 0%, #071322 100%);
+  color: #e2e8f0;
+}
+
+::selection {
+  background: rgba(56, 189, 248, 0.35);
+  color: #ffffff;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.glass-card {
+  @apply bg-white/5 border border-white/10 backdrop-blur-xl shadow-neon;
+}
+
+.fade-in {
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cursor-fade {
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.particle {
+  position: absolute;
+  border-radius: 9999px;
+  opacity: 0.18;
+  animation: float 14s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-18px) scale(1.08);
+  }
+}
